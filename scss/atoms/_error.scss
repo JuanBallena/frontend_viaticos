@@ -1,0 +1,23 @@
+@use "../settings/variables";
+.a-error {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    height: 32px;
+    margin: 0.2em 0;
+    background: variables.$error;
+    border-radius: 8px;
+    &__icon {
+        margin: 0 0.5em 0 0;
+    }
+    &__text {
+        text-transform: initial;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 14px;
+        color: variables.$complementary4;
+    }
+}

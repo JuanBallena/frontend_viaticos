@@ -1,0 +1,32 @@
+$_color1: #08367E;
+$_color1-2: #052A65;
+$_color1-3: #0C4399;
+$_color1-4: #255AAD;
+$_color2: #2389CF;
+$_color2-2: #0878C7;
+$_color2-3: #469BD7;
+$_color2-4: #70B2E2;
+$_escala-gris: #1B1B22;
+$_escala-gris2: #52575C;
+$_escala-gris3: #A0A4A8;
+$_escala-gris4: #CACCCF;
+$_escala-gris5: #DBDDE0;
+$_escala-gris6: #EFEFF0;
+$_escala-gris7: #F9F9FA;
+$_white: #FFFFFF;
+$_complementary1: #0ABEC4;
+$complementary4: #F13319;
+$error: #FFE7E6;
+
+/**** ****/
+
+$primary-color: $_color1;
+$gris-color: $_escala-gris;
+$white-color: $_white;
+$label-color: $_escala-gris2;
+$button-background-color: $_color2-2;
+$input-border-color: $_escala-gris4;
+$input-focus-border-color: $_color2;
+$placeholder-text-color: $_escala-gris3;
+$icon-eye-active: $_color2;
+$error-message: $_color2;

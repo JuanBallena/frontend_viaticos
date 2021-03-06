@@ -1,0 +1,10 @@
+.a-login-image {
+    grid-area: login-image;
+    height: 100vh;
+}
+
+@media (max-width: 1120px) {
+    .a-login-image {
+        display: none;
+    }
+}

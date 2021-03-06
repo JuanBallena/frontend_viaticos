@@ -1,0 +1,20 @@
+@use "../settings/variables";
+@mixin input-layout {
+    background: variables.$white-color;
+    border: 1.3px solid variables.$input-border-color;
+    box-shadow: none;
+    outline: none;
+    border-radius: 14px;
+    padding: 1.5em 1em;
+    width: 100%;
+    height: 3em;
+    &::placeholder {
+        font-style: normal;
+        font-weight: 600;
+        font-size: variables.$fs-text-s;
+        color: variables.$placeholder-text-color;
+    }
+    &:focus {
+        border: 1.5px solid variables.$input-focus-border-color;
+    }
+}

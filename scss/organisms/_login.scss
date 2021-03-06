@@ -1,0 +1,15 @@
+.g-login {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "login-image login-form";
+}
+
+@media (max-width: 1120px) {
+    .g-login {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: "login-form" "login-image";
+    }
+}

@@ -1,0 +1,37 @@
+@use "../settings/variables";
+.a-btn {
+    font-size: variables.$fs-btn;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+    margin: 1rem 0;
+    border-radius: 8px;
+    padding: 0.8em 2.5em;
+    font-weight: 600;
+    &--block {
+        display: block;
+        width: 100%;
+    }
+    &--secondary {
+        background: variables.$button-background-color;
+        color: variables.$white-color;
+        &:hover,
+        &:focus {
+            background: variables.$button-background-color;
+            color: variables.$white-color;
+        }
+    }
+    &__icon {
+        margin: 0 0 0 1.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    .a-btn {
+        width: 100%;
+    }
+}
