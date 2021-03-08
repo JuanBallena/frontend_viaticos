@@ -1,0 +1,26 @@
+@use "../settings/variables";
+.a-input-search {
+    min-width: 18em;
+    border-radius: 8px;
+    background: variables.$primary-color-3;
+    box-shadow: none;
+    outline: none;
+    padding: 1.5em 1em;
+    height: 3.5em;
+    border: none;
+    color: variables.$white-color;
+    &__icon {
+        margin-left: -40px;
+        z-index: 2;
+        cursor: pointer;
+    }
+    &::placeholder {
+        color: variables.$white-color;
+    }
+}
+
+@media (max-width: variables.$max-width-small) {
+    .a-input-search {
+        width: 100%;
+    }
+}

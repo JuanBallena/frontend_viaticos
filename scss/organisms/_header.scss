@@ -1,0 +1,80 @@
+@use "../settings/variables";
+.g-header {
+    background: variables.$primary-color;
+    position: sticky;
+    display: flex;
+    width: 100%;
+    padding: 0 100px;
+    height: 6em;
+    &__nav {
+        background: variables.$primary-color;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+    &__search {
+        display: flex;
+    }
+    &__ul {
+        background: variables.$primary-color;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+    }
+    &__li {
+        display: inline-block;
+    }
+}
+
+@media (max-width: variables.$max-width-large) {
+    .g-header {
+        height: 5.2em;
+        padding: 0 2em;
+        &__top-container {
+            flex-direction: row;
+            justify-content: space-between;
+            display: inline-flex;
+            align-items: center;
+            width: 100%;
+        }
+        &__search-container {
+            padding: 1.5em;
+            margin: 0;
+            display: block;
+        }
+        &__search {
+            padding-bottom: 3.5em;
+            border-bottom: 1px solid variables.$divider-color;
+        }
+        &__nav {
+            width: 50%;
+            height: 100vh;
+            position: fixed;
+            // left: -100%;
+            left: 0;
+        }
+        &--reverse {
+            flex-direction: column-reverse;
+            align-items: initial;
+        }
+        &__ul {
+            display: block;
+            height: 100vh;
+            width: 100%;
+            padding: 0;
+        }
+        &__li {
+            width: 100%;
+            padding: 0.8em 2.4em;
+        }
+    }
+}
+
+@media (max-width: variables.$max-width-small) {
+    .g-header {
+        &__nav {
+            width: 100%;
+        }
+    }
+}

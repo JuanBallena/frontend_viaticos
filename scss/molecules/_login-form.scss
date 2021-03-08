@@ -1,19 +1,19 @@
 @use "../settings/variables";
 .m-login-form {
     grid-area: login-form;
-    max-width: 24rem;
-    padding: 0 1rem;
+    max-width: 26em;
+    margin-top: 6em;
     &__title {
-        font-size: variables.$fs-text-m;
+        font-size: 2.2em;
         color: variables.$primary-color;
         font-style: normal;
         font-weight: bold;
         text-align: center;
         text-transform: uppercase;
-        margin: 1.5em;
+        margin: 0.2em 0;
     }
     &__description {
-        font-size: variables.$fs-text-s;
+        font-size: 1.1em;
         color: variables.$gris-color;
         font-style: normal;
         font-weight: normal;
@@ -22,17 +22,34 @@
         margin: 0.5em 0;
     }
     &__label {
-        font-size: variables.$fs-text-s;
-        color: variables.$label-color;
+        font-size: 1em;
+        color: variables.$gris-color-2;
         font-style: normal;
         font-weight: 600;
     }
+    &__button-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__password {
+        display: flex;
+    }
 }
 
-@media (max-width: 600px) {
+@media (max-width: variables.$max-width-large) {
     .m-login-form {
+        margin: 0;
+        padding: 0 1em;
         &__title {
-            margin: 0.5em;
+            font-size: 1.5em;
+            margin: 0;
+        }
+        &__description {
+            font-size: 1em;
+        }
+        &--reverse {
+            display: flex;
+            flex-direction: column-reverse;
         }
     }
 }

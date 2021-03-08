@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header class="g-header">
+
+        <div class="g-header__top-container">
+            <img class="a-logo--large" src="svg/logo-white.svg" alt="" />
+            <img class="a-menu-icon js-toogle-menu" src="svg/menu.svg" alt="" />
+        </div>
+
+        <nav class="g-header__nav g-header--reverse">
+
+            <ul class="g-header__ul">
+                <li class="g-header__li">
+                    <a class="a-link" href="#">Gestion de viajes</a>
+                </li>
+                <li class="g-header__li">
+                    <a class="a-link" href="#">Historico de viajes</a>
+                </li>
+                <li class="g-header__li">
+                    <a class="a-link" href="#">Notificaciones</a>
+                </li>
+                <li class="g-header__li">
+                    <a class="a-link" href="#">Perfil</a>
+                </li>
+            </ul>
+            <div class="g-header__search-container">
+                <div class="a-close-menu">
+                    <div class="a-close-menu__text js-toogle-menu">
+                        Cerrar
+                    </div>
+                    <img src="svg/close.svg" alt="">
+                </div>
+                <div class="g-header__search">
+                    <input class="a-input-search" type="text" placeholder="Buscar">
+                    <img src="svg/search.svg" class="a-input-search__icon">
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <main style="padding: 0 100px;">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eos, illo repellendus culpa, alias aspernatur placeat repudiandae iste minima ad est delectus quis impedit nam excepturi magnam qui, nostrum officia?
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(main);
+
+        var cont = 1;
+
+        function main() {
+            $(".js-toogle-menu").click(function() {
+
+                console.log("ok");
+                if (cont == 1) {
+                    $("nav").animate({
+                        left: '0'
+                    });
+                    cont = 0;
+                } else {
+                    cont = 1;
+                    $("nav").animate({
+                        left: '-100%'
+                    });
+                }
+            });
+        };
+    </script>
+</body>
+
+
+</html>

@@ -1,8 +1,8 @@
 @use "../settings/variables";
-.a-error-message {
+.a-span-error {
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 0.9em;
     line-height: 14px;
-    color: variables.$error-message;
+    color: variables.$secondary-color;
 }

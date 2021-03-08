@@ -1,0 +1,30 @@
+@use "../settings/variables";
+.a-link {
+    background: variables.$primary-color;
+    color: variables.$white-color;
+    border-bottom: 2px solid variables.$primary-color;
+    font-style: normal;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    margin: 0 3em;
+    &:hover {
+        border-bottom: 2px solid variables.$complementary1;
+        transition: 0.3s;
+    }
+}
+
+@media (max-width: variables.$max-width-large) {
+    .a-link {
+        border-bottom: 0;
+        margin: 0;
+        color: variables.$white-color;
+        font-style: normal;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1em;
+        &:hover {
+            border-bottom: 0;
+        }
+    }
+}

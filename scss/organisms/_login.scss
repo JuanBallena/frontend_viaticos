@@ -1,14 +1,20 @@
+@use "../settings/variables";
 .g-login {
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "login-image login-form";
+    &__form-container {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: variables.$max-width-large) {
     .g-login {
         display: grid;
         height: 100vh;
+        padding: 0;
         grid-template-columns: 1fr;
         grid-template-areas: "login-form" "login-image";
     }

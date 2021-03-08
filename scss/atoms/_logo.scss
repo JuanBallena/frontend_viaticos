@@ -1,0 +1,19 @@
+@use "../settings/variables";
+.a-logo--small {
+    display: none;
+}
+
+.a-logo--large {
+    padding: 1.2em 0;
+    width: auto;
+    height: 90%;
+}
+
+@media (max-width: variables.$max-width-large) {
+    .a-logo--small {
+        padding: 1em 0 0.5em 0;
+        width: 20%;
+        height: 20%;
+        display: block;
+    }
+}

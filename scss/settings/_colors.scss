@@ -13,20 +13,29 @@ $_escala-gris4: #CACCCF;
 $_escala-gris5: #DBDDE0;
 $_escala-gris6: #EFEFF0;
 $_escala-gris7: #F9F9FA;
-$_white: #FFFFFF;
 $_complementary1: #0ABEC4;
-$complementary4: #F13319;
-$error: #FFE7E6;
-
-/**** ****/
-
+$_complementary4: #F13319;
+$_white-color: #FFFFFF;
+$_error-color: #FFE7E6;
+$_divider-color: #3892D1;
+//variables
 $primary-color: $_color1;
+$primary-color-2: $_color1-2;
+$primary-color-3: $_color1-3;
+$primary-color-4: $_color1-4;
+$secondary-color: $_color2;
+$secondary-color-2: $_color2-2;
+$secondary-color-3: $_color2-3;
+$secondary-color-4: $_color2-4;
 $gris-color: $_escala-gris;
-$white-color: $_white;
-$label-color: $_escala-gris2;
-$button-background-color: $_color2-2;
-$input-border-color: $_escala-gris4;
-$input-focus-border-color: $_color2;
-$placeholder-text-color: $_escala-gris3;
-$icon-eye-active: $_color2;
-$error-message: $_color2;
+$gris-color-2: $_escala-gris2;
+$gris-color-3: $_escala-gris3;
+$gris-color-4: $_escala-gris4;
+$gris-color-5: $_escala-gris5;
+$gris-color-6: $_escala-gris6;
+$gris-color-7: $_escala-gris7;
+$complementary1: $_complementary1;
+$complementary4: $_complementary4;
+$white-color: $_white-color;
+$error-color: $_error-color;
+$divider-color: $_divider-color;
