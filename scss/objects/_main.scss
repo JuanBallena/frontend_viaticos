@@ -1,0 +1,23 @@
+@use "../settings/variables";
+.o-main {
+    padding: 2em 100px;
+}
+
+@media (max-width: variables.$max-width-large) {
+    .o-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.7em 1em;
+        &__container {
+            max-width: 60em;
+        }
+    }
+}
+
+@media (max-width: variables.$max-width-small) {
+    .o-main {
+        padding: 0.7em;
+        display: block;
+    }
+}

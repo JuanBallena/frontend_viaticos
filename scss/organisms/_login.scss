@@ -7,15 +7,19 @@
     &__form-container {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 }
 
 @media (max-width: variables.$max-width-large) {
     .g-login {
         display: grid;
-        height: 100vh;
-        padding: 0;
         grid-template-columns: 1fr;
         grid-template-areas: "login-form" "login-image";
+        height: 100vh;
+        padding: 0;
+        &__form-container {
+            align-items: initial;
+        }
     }
 }

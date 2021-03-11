@@ -5,9 +5,9 @@
 
 @media (max-width: variables.$max-width-large) {
     .a-menu-icon {
-        height: 24px;
+        cursor: pointer;
         display: block;
         padding: auto;
-        cursor: pointer;
+        height: 24px;
     }
 }

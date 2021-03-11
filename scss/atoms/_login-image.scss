@@ -16,7 +16,6 @@
 @media (max-width: variables.$max-width-small) {
     .a-login-image {
         display: flex;
-        // height: 100%;
         margin-top: -100%;
         background-image: linear-gradient(to bottom, rgba(255, 255, 255) 30%, transparent 70%), url("../png/login-image.png")
     }

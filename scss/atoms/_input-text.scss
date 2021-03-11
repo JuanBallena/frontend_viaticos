@@ -1,8 +1,0 @@
-@use "../settings/variables";
-@use "../tools/mixins";
-.a-input-text {
-    @include mixins.input-base;
-    &--error {
-        @include mixins.input-base(variables.$complementary4, variables.$complementary4);
-    }
-}

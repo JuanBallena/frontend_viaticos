@@ -1,0 +1,12 @@
+@use "../settings/variables";
+.o-white-container {
+    background: variables.$white-color;
+    border-radius: 8px;
+    padding: 2em 0;
+}
+
+@media (max-width: variables.$max-width-large) {
+    .o-white-container {
+        padding: 1.2em 0 2em 0;
+    }
+}

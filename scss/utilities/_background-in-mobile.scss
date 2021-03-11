@@ -1,0 +1,10 @@
+@use "../settings/variables";
+.u-background-in-mobile {
+    background-color: variables.$gris-color-7;
+}
+
+@media (max-width: variables.$max-width-small) {
+    .u-background-in-mobile {
+        background-color: variables.$white-color;
+    }
+}

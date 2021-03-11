@@ -15,15 +15,12 @@
 <body>
     <div class="g-login">
         <div class="a-login-image"></div>
-        <!-- <div class="a-login-image">
-            <img class="a-login-image__img" src="png/login-image.png" height="100%" width="100%" alt="">
-        </div> -->
 
         <div class="g-login__form-container">
             <form action="">
                 <div class="m-login-form">
-                    <img class="a-logo--small" src="svg/logo.svg" alt="">
-                    <div class="m-login-form--reverse">
+                    <img class="a-logo-principal" src="svg/logo.svg" alt="">
+                    <div class="u-reverse-in-mobile">
                         <span class="a-alert">
                             <img class="a-alert__icon" src="svg/alert.svg" alt="">
                             <span class="a-alert__text">Usuario o contraseña errados</span>
@@ -33,25 +30,24 @@
                     <div class="m-login-form__description">Ingresa con la misma cuenta y contraseña de tu correo</div>
 
                     <div class="o-input-container">
-                        <label class="m-login-form__label">Usuario</label>
-                        <input class="a-input-text" type="text" placeholder="Escribir usuario">
+                        <label class="a-label">Usuario</label>
+                        <input class="a-text-box--error" type="text" placeholder="Escribir usuario">
                         <span class="a-span-error">Ingresar usuario</span>
                     </div>
 
                     <div class="o-input-container">
-                        <label class="m-login-form__label">Contraseña</label>
-                        <div class="m-login-form__password">
-                            <input class="a-input-password" type="password" placeholder="Escribir contraseña">
-                            <img src="svg/closed-eye.svg" class="a-input-password__icon">
-                            <!-- <img src="svg/open-eye.svg" class="a-input-password__icon"> -->
+                        <label class="a-label">Contraseña</label>
+                        <div class="u-d-flex">
+                            <input class="a-text-box" type="password" placeholder="Escribir contraseña">
+                            <img src="svg/closed-eye.svg" class="a-text-box__icon">
                         </div>
                         <span class="a-span-error">Ingresar contraseña</span>
                     </div>
 
                     <div class="m-login-form__button-container">
-                        <button type="submit" class="a-btn a-btn--secondary">
+                        <button type="submit" class="a-btn a-btn--expand a-btn--secondary-2">
                             Ingresar
-                            <img class="a-btn__icon" src="svg/access-login.svg" alt="Login svg">
+                            <img class="a-btn__icon" src="svg/access-login.svg" alt="">
                         </button>
                     </div>
                 </div>

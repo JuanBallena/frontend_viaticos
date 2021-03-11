@@ -1,19 +1,22 @@
 @use "../settings/variables";
-.a-logo--small {
+.a-logo-principal {
     display: none;
 }
 
-.a-logo--large {
-    padding: 1.2em 0;
-    width: auto;
-    height: 90%;
+.a-logo-white {
+    padding: 1em 0;
+    height: 100%;
 }
 
 @media (max-width: variables.$max-width-large) {
-    .a-logo--small {
-        padding: 1em 0 0.5em 0;
-        width: 20%;
-        height: 20%;
+    .a-logo-principal {
         display: block;
+        padding: 1em 0 0.5em 0;
+        height: 20%;
+        width: 20%;
+    }
+    .a-logo-white {
+        padding: 1.5em 0;
+        height: 100%;
     }
 }

@@ -1,0 +1,45 @@
+@use "../settings/variables";
+.m-table {
+    width: 100%;
+    border-collapse: collapse;
+    &__thead {
+        color: variables.$secondary-color;
+        background: variables.$gris-color-7;
+    }
+    &__tbody {
+        color: variables.$gris-color-2;
+    }
+    &__tr {
+        height: 50px;
+    }
+    &__th,
+    &__td {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: left;
+        padding-left: 1em;
+        width: auto;
+        border-bottom: 2px solid variables.$gris-color-7;
+    }
+}
+
+@media (max-width: variables.$max-width-large) {
+    .m-table {
+        &__th:nth-child(3),
+        &__td:nth-child(3),
+        &__th:nth-child(4),
+        &__td:nth-child(4),
+        &__th:nth-child(5),
+        &__td:nth-child(5),
+        &__th:nth-child(6),
+        &__td:nth-child(6) {
+            display: none;
+        }
+        &__th,
+        &__td {
+            width: 50%;
+        }
+    }
+}

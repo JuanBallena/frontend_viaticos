@@ -1,0 +1,43 @@
+@use "../settings/variables";
+.m-welcome-card {
+    background-image: url("../svg/welcome-card.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1.6em;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    width: 100%;
+    &__title {
+        font-weight: bold;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    &__subtitle {
+        color: variables.$primary-color-2;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+@media (max-width: variables.$max-width-large) {
+    .m-welcome-card {
+        display: block;
+        &__title {
+            font-size: 18px;
+        }
+        &__subtitle {
+            font-size: 14px;
+        }
+    }
+}
+
+@media (max-width: variables.$max-width-small) {
+    .m-welcome-card {
+        &__button-container {
+            padding: 1.2em;
+        }
+    }
+}

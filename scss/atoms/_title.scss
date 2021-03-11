@@ -1,0 +1,14 @@
+@use "../settings/variables";
+.a-title {
+    color: variables.$gris-color;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 1.5em 0 1em 0;
+}
+
+@media (max-width: variables.$max-width-large) {
+    .a-title {
+        font-size: 18px;
+    }
+}

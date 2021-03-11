@@ -1,0 +1,56 @@
+@use "../settings/variables";
+.m-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "section1 section2" "section3 section4";
+    padding: 0 98px;
+    &__section-1 {
+        grid-area: section1;
+        padding-right: 109px;
+    }
+    &__section-2 {
+        grid-area: section2;
+        padding-right: 109px;
+    }
+    &__section-3 {
+        grid-area: section3;
+    }
+    &__section-4 {
+        grid-area: section4;
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__prev-button-icon {
+        display: none;
+    }
+    &__next-button {
+        margin-left: 1.5em;
+    }
+}
+
+@media (max-width: variables.$max-width-large) {
+    .m-form {
+        padding: 0 1em;
+        grid-template-areas: "section1 section1" "section2 section2" "section3 section4";
+        &__section-1 {
+            padding: 0;
+        }
+        &__section-2 {
+            padding: 0;
+        }
+        &__section-3,
+        &__section-4 {
+            padding-top: 1em;
+        }
+        &__prev-button-icon {
+            display: initial;
+        }
+        &__prev-button-text,
+        &__next-button-text {
+            display: none;
+        }
+        &__next-button {
+            margin-left: 0.5em;
+        }
+    }
+}

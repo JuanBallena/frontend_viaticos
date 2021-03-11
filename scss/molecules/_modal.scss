@@ -1,0 +1,57 @@
+@use "../settings/variables";
+.m-modal {
+    background: rgba(variables.$primary-color, 0.4);
+    justify-content: center;
+    position: fixed;
+    display: none;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    &--open {
+        display: flex;
+    }
+    &__container {
+        background: variables.$white-color;
+        align-content: center;
+        display: flex;
+        padding: 2em 3em;
+        border-radius: 24px;
+        width: 56%;
+    }
+    &__text {
+        text-align: justify;
+        padding: 1.5em 0;
+        margin: 0 1em;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+    }
+    &__button-container {
+        margin: 0 1em;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media (max-width: variables.$max-width-large) {
+    .m-modal {
+        padding: 0 1em;
+        &__container {
+            display: block;
+            width: 24em;
+            text-align: center;
+        }
+        &__text {
+            text-align: center;
+            font-size: 14px;
+            margin: 0;
+        }
+        &__button-container {
+            justify-content: center;
+            margin: 0;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 @use "../settings/variables";
-@mixin input-base($border-color: #52575C, $focus-border-color: #2389CF) {
-    background: variables.$white-color;
+@mixin input-base($backgroundColor: #FFFFFF, $border-color: #52575C, $focus-border-color: #2389CF) {
+    background: $backgroundColor;
     box-shadow: none;
     outline: none;
     border-radius: 14px;
@@ -8,6 +8,8 @@
     width: 100%;
     height: 3em;
     border: 1.3px solid $border-color;
+    display: flex;
+    justify-items: center;
     &::placeholder {
         font-family: Montserrat;
         letter-spacing: normal;

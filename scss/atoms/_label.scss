@@ -1,0 +1,7 @@
+@use "../settings/variables";
+.a-label {
+    font-size: 1em;
+    color: variables.$gris-color-2;
+    font-style: normal;
+    font-weight: 600;
+}

@@ -1,18 +1,49 @@
 @use "../settings/variables";
+@use "../tools/mixins";
 .a-btn {
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    box-shadow: none;
-    font-size: 1em;
-    margin: 0.6rem 0;
-    border-radius: 8px;
-    padding: 0.8em 2.5em;
-    font-weight: 600;
+    @include mixins.btn-base;
+    &--default {
+        height: 48px;
+        padding: 0.8em 3em;
+    }
+    &--sm {
+        height: 36px;
+        padding: 0.8em 3em;
+        width: 24px;
+    }
+    &--expand {
+        height: 48px;
+        padding: 0.8em 3em;
+    }
+    &--primary {
+        background: variables.$primary-color;
+        color: variables.$white-color;
+        &:hover,
+        &:focus {
+            background: variables.$primary-color;
+            color: variables.$white-color;
+        }
+    }
+    &--primary-3 {
+        border: 1px solid variables.$primary-color-3;
+        background: variables.$primary-color-3;
+        color: variables.$white-color;
+        &:hover,
+        &:focus {
+            background: variables.$primary-color-3;
+            color: variables.$white-color;
+        }
+    }
     &--secondary {
+        background: variables.$secondary-color;
+        color: variables.$white-color;
+        &:hover,
+        &:focus {
+            background: variables.$secondary-color;
+            color: variables.$white-color;
+        }
+    }
+    &--secondary-2 {
         background: variables.$secondary-color-2;
         color: variables.$white-color;
         &:hover,
@@ -21,13 +52,51 @@
             color: variables.$white-color;
         }
     }
+    &--outline {
+        border: 1px solid variables.$secondary-color;
+        background: variables.$white-color;
+        color: variables.$secondary-color;
+        &:hover,
+        &:focus {
+            background: variables.$white-color;
+            color: variables.$secondary-color;
+        }
+    }
+    &--muted {
+        border: 1px solid variables.$secondary-color-4;
+        background: variables.$white-color;
+        color: variables.$secondary-color-4;
+        &:hover,
+        &:focus {
+            background: variables.$white-color;
+            color: variables.$secondary-color-4;
+        }
+    }
     &__icon {
         margin-left: 1.5em;
+    }
+}
+
+@media (max-width: variables.$max-width-large) {
+    .a-btn {
+        &--reduce-in-mobile {
+            width: 5em;
+        }
+        &__icon {
+            margin-left: 0;
+        }
     }
 }
 
 @media (max-width: variables.$max-width-small) {
     .a-btn {
         width: 100%;
+        &--default {
+            height: 44px;
+            padding: 0.8em 0;
+        }
+        &--reduce-in-mobile {
+            width: 3.2em;
+        }
     }
 }

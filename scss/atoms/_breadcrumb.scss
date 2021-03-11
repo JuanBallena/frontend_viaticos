@@ -1,0 +1,28 @@
+@use "../settings/variables";
+.a-breadcrumb {
+    display: flex;
+    &__arrow {
+        margin-right: 0.5em;
+    }
+    &__link {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: variables.$gris-color-3;
+        text-decoration: none;
+    }
+    &--active {
+        color: variables.$secondary-color;
+    }
+}
+
+@media (max-width: variables.$max-width-small) {
+    .a-breadcrumb {
+        &__link {
+            font-size: 12px;
+        }
+        &__arrow {
+            margin-left: 0.7em;
+        }
+    }
+}

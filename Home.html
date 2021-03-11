@@ -15,19 +15,22 @@
 <body>
     <header class="g-header">
 
-        <div class="g-header__top-container">
-            <img class="a-logo--large" src="svg/logo-white.svg" alt="" />
+        <div class="g-header__top-container-mobile">
+            <img class="a-logo-white" src="svg/logo-white.svg" alt="" />
             <img class="a-menu-icon js-toogle-menu" src="svg/menu.svg" alt="" />
         </div>
 
-        <nav class="g-header__nav g-header--reverse">
+        <nav class="g-header__nav u-reverse-in-mobile">
 
             <ul class="g-header__ul">
                 <li class="g-header__li">
-                    <a class="a-link" href="#">Gestion de viajes</a>
+                    <a class="a-link" href="#">Gestión de viajes</a>
                 </li>
+                <!-- <li class="g-header__li">
+                    <a class="a-link" href="#">Mis viajes</a>
+                </li> -->
                 <li class="g-header__li">
-                    <a class="a-link" href="#">Historico de viajes</a>
+                    <a class="a-link" href="#">Histórico de viajes</a>
                 </li>
                 <li class="g-header__li">
                     <a class="a-link" href="#">Notificaciones</a>
@@ -35,24 +38,75 @@
                 <li class="g-header__li">
                     <a class="a-link" href="#">Perfil</a>
                 </li>
+                <li class="g-header__li">
+                    <button class="a-btn a-btn--expand a-btn--primary-3">Cerrar sesión</button>
+                </li>
             </ul>
-            <div class="g-header__search-container">
+            <div class="u-padding-1">
                 <div class="a-close-menu">
                     <div class="a-close-menu__text js-toogle-menu">
                         Cerrar
                     </div>
                     <img src="svg/close.svg" alt="">
                 </div>
-                <div class="g-header__search">
+                <!-- <div class="u-d-flex">
                     <input class="a-input-search" type="text" placeholder="Buscar">
                     <img src="svg/search.svg" class="a-input-search__icon">
-                </div>
+                </div> -->
+                <div class="g-header__divider"></div>
             </div>
 
         </nav>
     </header>
-    <main style="padding: 0 100px;">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias eos, illo repellendus culpa, alias aspernatur placeat repudiandae iste minima ad est delectus quis impedit nam excepturi magnam qui, nostrum officia?
+    <main class="o-main">
+        <div class="o-main__container">
+            <div class="m-welcome-card">
+                <div>
+                    <div class="m-welcome-card__title">Hola Jorge,</div>
+                    <div class="m-welcome-card__subtitle">En este espacio podrás ver el estado de los trámites de tus viajes</div>
+                </div>
+                <div class="m-welcome-card__button-contaier">
+                    <button class="a-btn a-btn--expand a-btn--secondary-2">
+                        Solicitar viáticos
+                    </button>
+                </div>
+            </div>
+            <div class="a-title">Viajes activos</div>
+            <table class="m-table">
+                <thead class="m-table__thead">
+                    <tr class="m-table__tr">
+                        <th class="m-table__th">Destino</th>
+                        <th class="m-table__th">Fecha de salida</th>
+                        <th class="m-table__th">Estado</th>
+                        <th class="m-table__th">Ultima modificación</th>
+                        <th class="m-table__th">Comentarios</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="m-table__tbody">
+                    <tr class="m-table__tr">
+                        <td class="m-table__td">Cuszo</td>
+                        <td class="m-table__td">07/02/2021</td>
+                        <td class="m-table__td">Sin enviar</td>
+                        <td class="m-table__td">11/02/2021</td>
+                        <td class="m-table__td">Aún no tiene comentario</td>
+                        <td class="m-table__td">
+                            <button class="a-btn a-btn--sm a-btn--outline">Ver</button>
+                        </td>
+                    </tr>
+                    <tr class="m-table__tr">
+                        <td class="m-table__td">Cuszo</td>
+                        <td class="m-table__td">07/02/2021</td>
+                        <td class="m-table__td">Sin enviar</td>
+                        <td class="m-table__td">11/02/2021</td>
+                        <td class="m-table__td">Aún no tiene comentario</td>
+                        <td class="m-table__td">
+                            <button class="a-btn a-btn--sm a-btn--muted">Ver</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

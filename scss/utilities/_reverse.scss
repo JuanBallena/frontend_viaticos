@@ -1,0 +1,8 @@
+@use "../settings/variables";
+@media (max-width: variables.$max-width-large) {
+    .u-reverse-in-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: initial;
+    }
+}

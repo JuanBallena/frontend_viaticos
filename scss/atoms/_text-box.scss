@@ -1,0 +1,16 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+.a-text-box {
+    @include mixins.input-base;
+    &--gris {
+        @include mixins.input-base(variables.$gris-color-7, variables.$gris-color-7, variables.$gris-color-7);
+    }
+    &__icon {
+        cursor: pointer;
+        margin-left: -40px;
+        z-index: 2;
+    }
+    &--error {
+        @include mixins.input-base(variables.$white-color, variables.$complementary4, variables.$complementary4);
+    }
+}

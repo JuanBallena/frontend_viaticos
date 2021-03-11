@@ -1,17 +1,16 @@
 @use "../settings/variables";
 .a-alert {
+    background: variables.$error-color;
     display: flex;
     align-items: center;
+    margin: 0.5em auto;
     padding: 0.4em 2em;
     max-width: 18em;
-    margin: 0.5em auto;
-    background: variables.$error-color;
     border-radius: 8px;
     &__icon {
         margin-right: 0.5em;
     }
     &__text {
-        font-style: normal;
         font-weight: 600;
         font-size: 0.8em;
         color: variables.$complementary4;

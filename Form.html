@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!-- <body style="background: white"> -->
+    <header class="g-header"></header>
+    <main class="o-main u-background-in-mobile">
+        <div class="o-main__container">
+            <div class="a-breadcrumb">
+                <div class="a-breadcrumb__arrow">
+                    <img src="svg/back.svg" alt="">
+                </div>
+                <div>
+                    <a class="a-breadcrumb__link" href="#">Home /</a>
+                    <a class="a-breadcrumb__link a-breadcrumb--active" href="#">solicitar viático</a>
+                </div>
+            </div>
+            <div class="o-white-container">
+
+                <form action="">
+                    <div class="m-form">
+                        <div class="m-form__section-1">
+                            <label class="a-label" for="">Nombre completo</label>
+                            <div class="o-input-container">
+                                <input class="a-text-box--gris" type="text" value="Jorge Luis Vargas Roque">
+                            </div>
+                            <label class="a-label" for="">Responsable aprobador</label>
+                            <div class="o-input-container">
+                                <input class="a-text-box--gris" type="text" value="Cesar Antonio Bravp Alvarado">
+                            </div>
+                        </div>
+                        <div class="m-form__section-2">
+                            <label class="a-label" for="">Cargo</label>
+                            <div class="o-input-container">
+                                <div class="u-d-flex">
+                                    <select class="a-select-box">
+                                        <option value="" selected="">Supervisor</option>
+                                    </select>
+                                    <img class="a-select-box__icon" src="svg/arrow-bottom.svg" alt="">
+                                </div>
+                            </div>
+                            <label class="a-label" for="">Centro de costo</label>
+                            <div class="o-input-container">
+                                <input class="a-text-box" type="text" value="123">
+                            </div>
+                        </div>
+                        <div class="m-form__section-3">
+                            <button class="a-btn a-btn--default a-btn--outline">
+                                Guardar datos
+                            </button>
+                        </div>
+                        <div class="m-form__section-4">
+                            <button class="a-btn a-btn--default a-btn--outline a-btn--reduce-in-mobile">
+                                <img class="a-btn__icon m-form__prev-button-icon" src="svg/prev.svg" alt="">
+                                <span class="m-form__prev-button-text">atrás</span>
+                            </button>
+                            <button class="a-btn a-btn--default a-btn--secondary a-btn--reduce-in-mobile m-form__next-button">
+                                <span class="m-form__next-button-text">Siguiente</span>
+                                <img class="a-btn__icon m-form__next-button-icon" src="svg/next.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+@mixin btn-base {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    box-shadow: none;
+    font-size: 1em;
+    margin: 0.6rem 0;
+    border-radius: 8px;
+    font-weight: 600;
+}
