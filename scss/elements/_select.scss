@@ -1,6 +1,9 @@
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    // text-indent: 1px;
+    // text-overflow: '';
 }

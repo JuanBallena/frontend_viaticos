@@ -1,0 +1,28 @@
+@use "../settings/variables";
+.a-attach {
+    display: flex;
+    padding: 0.5em 0;
+    cursor: pointer;
+    align-items: center;
+    &__text {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: variables.$gris-color-2;
+        padding: 0 0.3em;
+    }
+    &__optional {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: variables.$gris-color-3;
+    }
+}
+
+@media (max-width: variables.$max-width-large) {
+    .a-attach {
+        &__text {
+            font-size: 14px;
+        }
+    }
+}

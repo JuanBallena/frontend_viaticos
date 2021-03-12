@@ -16,19 +16,23 @@
     <header class="g-header">
 
         <div class="g-header__top-container-mobile">
-            <img class="a-logo-white" src="svg/logo-white.svg" alt="" />
-            <img class="a-menu-icon js-toogle-menu" src="svg/menu.svg" alt="" />
-        </div>
 
+            <img class="a-logo-white" src="svg/logo-white.svg" alt="" />
+
+            <label for="check-menu-icon">
+                <img class="a-menu-icon" src="svg/menu.svg" alt="" />
+            </label>
+        </div>
+        <input type="checkbox" id="check-menu-icon">
         <nav class="g-header__nav u-reverse-in-mobile">
 
             <ul class="g-header__ul">
                 <li class="g-header__li">
                     <a class="a-link" href="#">Gestión de viajes</a>
                 </li>
-                <!-- <li class="g-header__li">
+                <li class="g-header__li">
                     <a class="a-link" href="#">Mis viajes</a>
-                </li> -->
+                </li>
                 <li class="g-header__li">
                     <a class="a-link" href="#">Histórico de viajes</a>
                 </li>
@@ -39,16 +43,18 @@
                     <a class="a-link" href="#">Perfil</a>
                 </li>
                 <li class="g-header__li">
-                    <button class="a-btn a-btn--expand a-btn--primary-3">Cerrar sesión</button>
+                    <button class="a-btn a-btn--default a-btn--primary-3">Cerrar sesión</button>
                 </li>
             </ul>
             <div class="u-padding-1">
-                <div class="a-close-menu">
-                    <div class="a-close-menu__text js-toogle-menu">
-                        Cerrar
+                <label for="check-menu-icon">
+                    <div class="a-close-menu">
+                            <div class="a-close-menu__text js-toogle-menu">
+                                Cerrar
+                            </div>
+                            <img src="svg/close.svg" alt="">
                     </div>
-                    <img src="svg/close.svg" alt="">
-                </div>
+                </label>
                 <!-- <div class="u-d-flex">
                     <input class="a-input-search" type="text" placeholder="Buscar">
                     <img src="svg/search.svg" class="a-input-search__icon">
@@ -65,7 +71,7 @@
                     <div class="m-welcome-card__title">Hola Jorge,</div>
                     <div class="m-welcome-card__subtitle">En este espacio podrás ver el estado de los trámites de tus viajes</div>
                 </div>
-                <div class="m-welcome-card__button-contaier">
+                <div class="m-welcome-card__button-container">
                     <button class="a-btn a-btn--expand a-btn--secondary-2">
                         Solicitar viáticos
                     </button>
@@ -108,7 +114,7 @@
             </table>
         </div>
     </main>
-
+    <!-- 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(main);
@@ -132,7 +138,7 @@
                 }
             });
         };
-    </script>
+    </script> -->
 </body>
 
 

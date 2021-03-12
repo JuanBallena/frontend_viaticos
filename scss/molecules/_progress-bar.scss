@@ -1,0 +1,96 @@
+@use "../settings/variables";
+.m-progress-bar {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0 6em 0;
+    &__step {
+        position: relative;
+        text-align: center;
+        padding-top: 0.7em;
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        margin: 0 83px;
+        &--present {
+            background-color: variables.$white-color;
+            box-shadow: 0px 4px 25px variables.$shadow-step;
+        }
+        &--gris {
+            background-color: variables.$gris-color-6;
+        }
+        &--success {
+            background-color: variables.$success-color;
+        }
+    }
+    &__line--gris:before,
+    &__line--gris:after {
+        position: absolute;
+        content: "";
+        width: 166px;
+        height: 5px;
+        bottom: 20px;
+        right: -166px;
+        background-color: variables.$gris-color-6;
+    }
+    // &__step:last-child &__line--gris:before,
+    // &__step:last-child &__line--gris:after {
+    //     display: none;
+    // }
+    &__line--success:before,
+    &__line--success:after {
+        position: absolute;
+        content: "";
+        width: 166px;
+        height: 5px;
+        bottom: 20px;
+        right: -166px;
+        background-color: variables.$complementary1;
+    }
+    // &__step:last-child &__line--success:before,
+    // &__step:last-child &__line--success:after {
+    //     display: none;
+    // }
+    &__icon {
+        line-height: 2.5em;
+    }
+    &__text {
+        position: absolute;
+        top: 4em;
+        text-align: center;
+        width: 210px;
+        font-weight: 600;
+        font-size: 14px;
+        left: -80px;
+        line-height: 16px;
+        &--present {
+            color: variables.$primary-color;
+        }
+        &--gris {
+            color: variables.$gris-color-3;
+        }
+        &--success {
+            color: variables.$complementary1;
+        }
+    }
+}
+
+@media (max-width: variables.$max-width-large) {
+    .m-progress-bar {
+        margin: 0 0 4.8em 0;
+        &__step {
+            margin: 0 34px;
+            position: relative;
+        }
+        &__line--gris:before,
+        &__line--gris:after,
+        &__line--success:before,
+        &__line--success:after {
+            width: 80px;
+            right: -80px;
+        }
+        &__text {
+            width: 70px;
+            left: -12px;
+        }
+    }
+}

@@ -6,7 +6,6 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 1em;
-    margin: 0 1.8em;
     &:hover {
         border-bottom: 2px solid variables.$complementary1;
         transition: 0.3s;
@@ -20,7 +19,6 @@
         border-bottom: 0;
         font-weight: 600;
         font-size: 1.1em;
-        margin: 0;
         &:hover {
             border-bottom: 0;
         }
