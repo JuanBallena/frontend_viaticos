@@ -13,8 +13,8 @@
 
 @media (max-width: variables.$max-width-large) {
     .g-login {
-        display: grid;
-        grid-template-columns: 1fr;
+        // display: grid;
+        // grid-template-columns: 1fr;
         grid-template-areas: "login-form" "login-image";
         height: 100vh;
         padding: 0;

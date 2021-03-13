@@ -1,0 +1,126 @@
+@use "../settings/variables";
+.m-table-2 {
+    width: 90%;
+    margin: 0 auto;
+    // display: grid;
+    // grid-template-columns: repeat(5, 1fr);
+    // grid-template-rows: auto;
+    // grid-template-areas: "section1 section1 section1 section1 section2" "section3 section3 section3 section3 section4";
+    &__section-1 {
+        // grid-area: section1;
+        height: 48px;
+        background: variables.$gris-color-7;
+        width: 78%;
+        ul {
+            display: flex;
+        }
+        li {
+            width: 100%;
+            list-style: none;
+            color: variables.$gris-color-2;
+            font-weight: 600;
+        }
+    }
+    &__section-2 {
+        // grid-area: section2;
+        height: 48px;
+        background: variables.$gris-color-7;
+        width: 22%;
+    }
+    &__section-3 {
+        // grid-area: section3;
+        height: 48px;
+        width: 78%;
+        ul {
+            display: flex;
+        }
+        li {
+            width: 100%;
+            list-style: none;
+            color: variables.$gris-color-2;
+            font-weight: normal;
+        }
+    }
+    &__section-4 {
+        // grid-area: section4;
+        height: 48px;
+        width: 22%;
+    }
+    &__actions {
+        display: flex;
+    }
+    a {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        text-decoration: none;
+        color: variables.$secondary-color;
+    }
+    &__icons,
+    &__ver-mas {
+        padding: 1em 1em 0 0;
+    }
+    img {
+        padding: 0 0.3em;
+    }
+}
+
+@media (max-width: variables.$max-width-large) {
+    .m-table-2 {
+        width: 100%;
+        &__section-1,
+        &__section-2 {
+            display: none;
+        }
+        &__section-3 {
+            height: 8em;
+            ul {
+                display: block;
+                padding-left: 1.7em;
+                margin: 0
+            }
+            li {
+                width: 100%;
+                color: variables.$gris-color;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 27px;
+            }
+            li::before {
+                content: attr(label);
+                float: left;
+                width: 45%;
+                font-weight: 600;
+                font-size: 12px;
+                color: variables.$gris-color-2;
+                line-height: 27px;
+            }
+        }
+        &__section-4 {
+            height: 11.6em;
+            // border-bottom: 3px solid #EFEFF0;
+            // border-bottom: 3px solid red;
+        }
+        &__actions {
+            display: block;
+            text-align: center;
+        }
+        a {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14px;
+            text-decoration: none;
+            color: variables.$secondary-color;
+        }
+        &__icons {
+            padding: 0.5em 0 0 0;
+        }
+        &__ver-mas {
+            padding: 0.3em 0 0 0;
+        }
+        img {
+            margin: 1.8em auto 1.7em auto;
+            display: block;
+        }
+    }
+}

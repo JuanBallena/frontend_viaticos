@@ -1151,6 +1151,119 @@ template {
     width: 50%;
   }
 }
+.m-table-2 {
+  width: 90%;
+  margin: 0 auto;
+}
+.m-table-2__section-1 {
+  height: 48px;
+  background: #F9F9FA;
+  width: 78%;
+}
+.m-table-2__section-1 ul {
+  display: flex;
+}
+.m-table-2__section-1 li {
+  width: 100%;
+  list-style: none;
+  color: #52575C;
+  font-weight: 600;
+}
+.m-table-2__section-2 {
+  height: 48px;
+  background: #F9F9FA;
+  width: 22%;
+}
+.m-table-2__section-3 {
+  height: 48px;
+  width: 78%;
+}
+.m-table-2__section-3 ul {
+  display: flex;
+}
+.m-table-2__section-3 li {
+  width: 100%;
+  list-style: none;
+  color: #52575C;
+  font-weight: normal;
+}
+.m-table-2__section-4 {
+  height: 48px;
+  width: 22%;
+}
+.m-table-2__actions {
+  display: flex;
+}
+.m-table-2 a {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: none;
+  color: #2389CF;
+}
+.m-table-2__icons, .m-table-2__ver-mas {
+  padding: 1em 1em 0 0;
+}
+.m-table-2 img {
+  padding: 0 0.3em;
+}
+
+@media (max-width: 1100px) {
+  .m-table-2 {
+    width: 100%;
+  }
+  .m-table-2__section-1, .m-table-2__section-2 {
+    display: none;
+  }
+  .m-table-2__section-3 {
+    height: 8em;
+  }
+  .m-table-2__section-3 ul {
+    display: block;
+    padding-left: 1.7em;
+    margin: 0;
+  }
+  .m-table-2__section-3 li {
+    width: 100%;
+    color: #1B1B22;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 27px;
+  }
+  .m-table-2__section-3 li::before {
+    content: attr(label);
+    float: left;
+    width: 45%;
+    font-weight: 600;
+    font-size: 12px;
+    color: #52575C;
+    line-height: 27px;
+  }
+  .m-table-2__section-4 {
+    height: 11.6em;
+  }
+  .m-table-2__actions {
+    display: block;
+    text-align: center;
+  }
+  .m-table-2 a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+    color: #2389CF;
+  }
+  .m-table-2__icons {
+    padding: 0.5em 0 0 0;
+  }
+  .m-table-2__ver-mas {
+    padding: 0.3em 0 0 0;
+  }
+  .m-table-2 img {
+    margin: 1.8em auto 1.7em auto;
+    display: block;
+  }
+}
 .m-welcome-card {
   background-image: url("../svg/welcome-card.svg");
   background-size: cover;
@@ -1250,8 +1363,6 @@ template {
 
 @media (max-width: 1100px) {
   .g-login {
-    display: grid;
-    grid-template-columns: 1fr;
     grid-template-areas: "login-form" "login-image";
     height: 100vh;
     padding: 0;
